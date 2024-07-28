@@ -35,8 +35,7 @@
                         } else if (computerMove === 'scissor') {
                             result = 'You win.'
                         }
-
-                        alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
+                                    
                      } else if (move === 'paper'){
                         
                          if (computerMove === 'rock') {
@@ -46,7 +45,6 @@
                         } else if (computerMove === 'scissor') {
                               result = 'You lose.'
                          }
-                          alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
        
                     } else  if (move === 'scissor'){
                        if (computerMove === 'rock') {
@@ -56,10 +54,11 @@
                         } else if (computerMove === 'scissor') {
                             result = 'Tie.'
                         }
-
-                         alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
                         }
-                     }
+
+                    alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
+           
+                }
             
                 function pickComputerMove() {   
                     const randomNumber = Math.random();
