@@ -36,34 +36,30 @@
                             result = 'You win.'
                         }
 
-                        alert(`You picked rock, computer picked ${computerMove}, and result is ${result}`)
-                     }
-
-                     if (move === 'paper'){
+                        alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
+                     } else if (move === 'paper'){
                         
-                        if (computerMove === 'paper') {
-                            result = 'You Win.'
-                        } else if (computerMove === 'paper') {
-                            result = 'Tie.'
+                         if (computerMove === 'rock') {
+                              result = 'You Win.'
+                         } else if (computerMove === 'paper') {
+                              result = 'Tie.'
                         } else if (computerMove === 'scissor') {
-                            result = 'You lose.'
+                              result = 'You lose.'
+                         }
+                          alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
+       
+                    } else  if (move === 'scissor'){
+                       if (computerMove === 'rock') {
+                            result = 'You Lose.'
+                        } else if (computerMove === 'paper') {
+                            result = 'You Win.'
+                        } else if (computerMove === 'scissor') {
+                            result = 'Tie.'
                         }
 
-                        alert(`You picked rock, computer picked ${computerMove}, and result is ${result}`)
+                         alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
+                        }
                      }
-
-                     if (move === 'scissor'){
-                            if (computerMove === 'rock') {
-                                  result = 'You Lose.'
-                            } else if (computerMove === 'paper') {
-                                 result = 'You Win.'
-                            } else if (computerMove === 'scissor') {
-                                result = 'Tie.'
-                            }
-
-                    alert(`You picked ${move}, computer picked ${computerMove}, and result is ${result}`)
-                        }
-                }
             
                 function pickComputerMove() {   
                     const randomNumber = Math.random();
